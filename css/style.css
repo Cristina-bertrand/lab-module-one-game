@@ -1,0 +1,135 @@
+html {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+#menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.menu-blocks {
+  display: block;
+  padding: 20px;
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-menu {
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.chef {
+  width:20%;
+  padding: 5px;
+  height: 280px;
+}
+
+.logos {
+  width:70%;
+  padding-bottom: 20px;
+}
+
+.button-prices, .button-restaurants, .button-dishes {
+  background-color: rgb(96,96,96);
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 25px 55px;
+}
+
+.dishes_board {
+  display: flex;
+  background:#dddddd;
+	width:100%;
+	height:340px;
+	margin:0px auto;
+  border-radius: 44px;
+  box-shadow: inset 0px 0px 20px -6px rgba(97,89,97,1);
+}
+
+
+
+#prices-dish {
+  border-style: double;
+  border-width: 5px;
+  text-align: center;
+  margin: 10px;
+}
+
+#score {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: "grey";;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: Arial;
+  width:200px;
+  padding: 20px;
+  padding-top: 0;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+}
+
+h1 {
+  color: "grey";
+  font-weight: bolder;
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  color: "grey";
+  font-weight: bolder;
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: center;
+  padding: 20px 50px;
+  margin: 5px;
+  border-style: double;
+  border-width: 5px;
+}
+
+@media (max-width: 768px) {
+  .menu-blocks {
+    width:100%;
+  }
+  }
+@media (min-width: 767px) and (max-width: 960px) {
+  .menu-blocks {
+    width:28%;
+  }
+}
+@media (min-width: 961px) and (max-width: 1024px) {
+  .menu-blocks {
+    width:28%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-blocks {
+    width:28%;
+  }
+  .menu-text {
+    width:60%;
+  }
+
+}
+
+.hidden {
+  visibility: hidden;
+}
