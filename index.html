@@ -24,7 +24,7 @@
             <button class="button-restaurants">Restaurantes</button>
         </div>
     </div>
-    <div class="first-game">
+    <div id="dishes-game">
         <section>
         <div class="game-menu">
         <div class="menu-text">
@@ -67,8 +67,25 @@
     </section>
     </div>
     <div id="restaurant-game">
+      <section>
+      <div class="game-menu">
+          <h1>Encuentra las parejas de platos</h1>
+          <h2>Memoriza y selecciona de par en par los platos iguales</h2>
+          <img src="./chefimages/Pensativo.png" alt="" class="chef">
+      </div>
+      <div id="score">
+          <p>Aciertos: <span id="pairs_clicked">0</span></p>
+          <p>Fallos: <span id="pairs_guessed">0</span></p>
+      </div>
+    </section>
+    <section id="restaurant-info">
+      <h1>Cañadio</h1>
+      <p>Restaurante desde 1981</p>
+    </section>
+    <section>
+    <div class="dishes_board"></div>
+    </section>
     </div>
-
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="./lib/dataset.js"></script>
     <script type="text/javascript" src="./lib/dish.js"></script>

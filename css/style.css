@@ -45,14 +45,44 @@ html {
 
 .dishes_board {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 30px;
   background:#dddddd;
-	width:100%;
-	height:340px;
 	margin:0px auto;
   border-radius: 44px;
   box-shadow: inset 0px 0px 20px -6px rgba(97,89,97,1);
 }
 
+.dish_blocks {
+  display: block;
+  padding: 15px;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dish_back {
+  background-color: #456783;
+	width:71px;
+	height:71px;
+	margin:10px;
+	padding:30px;
+	font-size:18px;
+
+}
+
+.name {
+  height: 90px;
+	padding:10px;
+	font-size:16px;
+
+}
+
+.dish .front .blocked,
+.dish .back .blocked {
+  pointer-events: none;
+}
 
 
 #prices-dish {
@@ -127,7 +157,6 @@ p {
   .menu-text {
     width:60%;
   }
-
 }
 
 .hidden {
