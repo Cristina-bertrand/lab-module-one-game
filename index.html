@@ -10,86 +10,133 @@
 </head>
 
 <body>
-    <div id="menu">
-        <div class="menu-blocks">
-            <img src="./images/imagesFalses/Dish.png" alt="" class="logos">
-            <button class="button-dishes">Platos</button>
+    <div id="dishcoverer">
+        <div class="logo-dishcoverer">
+        <img  src="./images/home/Logo.png" alt="" class="logo-image">
         </div>
-        <div class="menu-blocks">
-            <img src="./images/imagesFalses/Price.png" alt="" class="logos">
-            <button class="button-prices">Precios</button>
+        <div class="search-place">
+           <input placeholder="búsqueda rápida de platos" type="text" name="search">
         </div>
-        <div class="menu-blocks">
-            <img src="./images/imagesFalses/Restaurant.png" alt="" class="logos">
-            <button class="button-restaurants">Restaurantes</button>
-        </div>
+        <div>
+        <button class="button-search">Buscar</button>
+      </div>
+      <div class="log-in">
+        <img  src="./images/home/Sign-up.png" alt="" class="log-in-image">
+      </div>
     </div>
+    <section id="home">
+        <div id="comidillas">
+            <h1 class="comidillas-title"><span class="welcome-comidillas">BIENVENIDOS</span><br><span class="comidillas-bold">COMIDILLAS</span></h1>
+        </div>
+        <section id="experto-block">
+            <div id="experto-image"></div>
+            <div id="experto-presentation">
+                <h1 class="experto-title">¿Eres un comidillas <span class="experto-word">experto?</span></h1>
+                <p>El que más sabe sobre restaurantes de moda. El que siempre sabe que pedir. El que se acuerda de su amigo vegano y del intolerante a lactosa. El que tiene una lista de menús más top.</p>
+                <br>
+                <p>Demuestra lo que sabes haciendo nuestros quizs y consigue usuario premium en Dishcoverer</p>
+            </div>
+        </section>
+        <div id="menu">
+            <div class="menu-blocks">
+                <img src="./images/home/Platos.png" alt="" class="logos">
+                <p class="menu-description">Memoriza y selecciona las parejas de platos iguales</p>
+                <button class="button-dishes">Platos</button>
+            </div>
+            <div class="menu-blocks">
+                <img src="./images/home/Precios.png" alt="" class="logos">
+                <p class="menu-description">Une cada plato con su precio</p>
+                <button class="button-prices">Precios</button>
+            </div>
+            <div class="menu-blocks">
+                <img src="./images/home/Restaurantes.png" alt="" class="logos">
+                <p class="menu-description">Encuentra que plato no corresponde a ese restaurante</p>
+                <button class="button-restaurants">Restaurantes</button>
+            </div>
+        </div>
+    </section>
     <div id="dishes-game">
-        <section>
-        <div class="game-menu">
-        <div class="menu-text">
-            <h1>Encuentra las parejas de platos</h1>
-            <h2>Memoriza y selecciona de par en par los platos iguales</h2>
-        </div>
-        </div>
-        <div id="score">
-            <p>Aciertos: <span id="pairs_clicked">0</span></p>
-            <p>Fallos: <span id="pairs_guessed">0</span></p>
-        </div>
-      </section>
-      <section>
-        <div class="dishes_board"></div>
-      </section>
+        <section class="game-menu">
+            <div class="game-title">
+                <div class="menu-text">
+                    <h1>Platos Quiz</h1>
+                    <h2>Memoriza y selecciona la pareja de platos iguales</h2>
+                </div>
+            <div id="score">
+                <h3 class="score-points">Intentos: <span id="pairs_clicked">0</span></h3>
+                <h3 class="score-points">Aciertos: <span id="pairs_guessed">0</span></h3>
+            </div>
+            <div>
+
+            </div>
+            </div>
+        </section>
+        <section class="game-board">
+            <div class="dishes_board"></div>
+        </section>
     </div>
     <div id="prices-game">
-      <section>
-      <div class="game-menu">
-          <h1>Encuentra las parejas de platos</h1>
-          <h2>Memoriza y selecciona de par en par los platos iguales</h2>
-          <img src="./chefimages/Pensativo.png" alt="" class="chef">
-      </div>
-      <div id="score">
-          <p>Aciertos: <span id="pairs_clicked">0</span></p>
-          <p>Fallos: <span id="pairs_guessed">0</span></p>
-      </div>
-    </section>
-    <section id="prices-dish">
-      <fieldset>Steak tartar</fieldset>
-    <fieldset>Precios</fieldset>
-      <ul>
-        <li>12 €</li>
-        <li>16 €</li>
-        <li>17 €</li>
-      </ul>
-    </section>
-    <section>
-    <div class="dishes_board"></div>
-    </section>
+      <section class="game-menu">
+          <div class="game-title">
+              <div class="menu-text">
+                  <h1>Platos Quiz</h1>
+                  <h2>Memoriza y selecciona la pareja de platos iguales</h2>
+              </div>
+          <div id="score">
+              <h3 class="score-points">Intentos: <span id="pairs_clicked">0</span></h3>
+              <h3 class="score-points">Aciertos: <span id="pairs_guessed">0</span></h3>
+          </div>
+          <div>
+
+          </div>
+          </div>
+      </section>
+      <section id="prices-dish">
+          <fieldset>Steak tartar</fieldset>
+          <fieldset>Precios</fieldset>
+          <ul>
+              <li>12 €</li>
+              <li>16 €</li>
+              <li>17 €</li>
+          </ul>
+      </section>
+      <section class="game-board">
+          <div class="prices_dishes_board"></div>
+      </section>
     </div>
     <div id="restaurant-game">
-      <section>
-      <div class="game-menu">
-          <h1>Encuentra las parejas de platos</h1>
-          <h2>Memoriza y selecciona de par en par los platos iguales</h2>
-          <img src="./chefimages/Pensativo.png" alt="" class="chef">
-      </div>
-      <div id="score">
-          <p>Aciertos: <span id="pairs_clicked">0</span></p>
-          <p>Fallos: <span id="pairs_guessed">0</span></p>
-      </div>
-    </section>
-    <section id="restaurant-info">
-      <h1>Cañadio</h1>
-      <p>Restaurante desde 1981</p>
-    </section>
-    <section>
-    <div class="dishes_board"></div>
-    </section>
+      <section class="game-menu">
+          <div class="game-title">
+              <div class="menu-text">
+                  <h1>Platos Quiz</h1>
+                  <h2>Memoriza y selecciona la pareja de platos iguales</h2>
+              </div>
+          <div id="score">
+              <h3 class="score-points">Intentos: <span id="pairs_clicked">0</span></h3>
+              <h3 class="score-points">Aciertos: <span id="pairs_guessed">0</span></h3>
+          </div>
+          <div>
+
+          </div>
+          </div>
+      </section>
+        <section id="restaurant-info">
+            <h1>Cañadio</h1>
+            <p>Restaurante desde 1981</p>
+        </section>
+        <section class="game-board">
+            <div class="dishes_board"></div>
+        </section>
     </div>
+    <footer id="footer">
+        <img class="dishcoverer-footer" src="./images/home/footer.png">
+    </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="./lib/dataset.js"></script>
     <script type="text/javascript" src="./lib/dish.js"></script>
-    <script type="text/javascript" src="./lib/game.js"></script>
+    <script type="text/javascript" src="./lib/game-dishes.js"></script>
+    <script type="text/javascript" src="./lib/game-prices.js"></script>
+    <script type="text/javascript" src="./lib/game-restaurants.js"></script>
 </body>
 
 </html>

@@ -1,164 +1,263 @@
+
+
 html {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
 }
-
-#menu {
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #171B27;
+}
+h1 {
+    color: "grey";
+    font-weight: bolder;
+    font-size: 4em;
+    text-align: center;
+}
+h2 {
+    color: "grey";
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+}
+p {
+    color: #696969;
+}
+#dishcoverer {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
-.menu-blocks {
-  display: block;
-  padding: 20px;
-  height: 300px;
-  justify-content: space-around;
-  align-items: center;
+#comidillas {
+    display: flex;
+    width: 100%;
+    height: 418px;
+    background-image: url("../images/home/food-background-PQZU33B.jpg");
+    background-size: cover;
+    background-position: center;
 }
-
-.game-menu {
-  flex-flow: column nowrap;
-  justify-content: center;
-  width: 100%;
-  height: 300px;
+#experto-block {
+    display: flex;
+    flex-flow: row nowrap;
 }
-
-.chef {
-  width:20%;
-  padding: 5px;
-  height: 280px;
+#experto-image {
+    height: 427px;
+    width: 100%;
+    background-image: url("../images/home/hungry-young-man-smiling-with-chopsticks-PU923AS.jpg");
+    background-size: cover;
+    background-position: center;
 }
-
-.logos {
+#experto-presentation {
+    background-color: #E3EAF0;
+    padding: 30px;
+    padding-left: 50px;
+}
+#menu {
+    display: flex;
+    justify-content: flex-end;
+}
+#prices-dish {
+    border-style: double;
+    border-width: 5px;
+    text-align: center;
+    margin: 10px;
+}
+#score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+    font-family: Arial;
+    width: 200px;
+    padding: 20px;
+    padding-top: 0;
+    margin: auto;
+}
+.hidden {
+    visibility: hidden;
+}
+.comidillas-title {
+    color: white;
+    width: 1192px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 130px;
+    letter-spacing: 3px;
+}
+.welcome-comidillas {
+    font-weight: 200;
+}
+.comidillas-bold {
+    font-weight: bold;
+    font-size: 2em;
+}
+.experto-title {
+    text-align: left;
+    font-size: 3em;
+    font-weight: normal;
+}
+.experto-word {
+    color: #DE5B3F;
+    font-weight: bold;
+}
+.logo-dishcoverer {
+    width: 200px;
+}
+.logo-image {
   width:70%;
-  padding-bottom: 20px;
+  padding: 30px;
 }
-
-.button-prices, .button-restaurants, .button-dishes {
-  background-color: rgb(96,96,96);
+.log-in {
+    width: 100px;
+}
+.log-in-image {
+  width:160%;
+  padding: 80px;
+}
+.search-place {
+  width: 400px;
+  padding: 50px;
+  margin-top: 30px;
+}
+.search-place input{
+    height:30px;
+}
+input {
+    border: 1px solid grey;
+    border-radius: 40px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 1em;
+    display: block;
+    width: 120%;
+}
+.button-search {
+  background-color: #DE5B3F;
   color: white;
   font-weight: bold;
   font-size: 1em;
-  padding: 25px 55px;
+  padding: 15px 15px;
+  border-radius: 40px;
+  margin-top: 80px;
+  margin-left: 100px;
+  width: 110px;
 }
-
-.dishes_board {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 30px;
-  background:#dddddd;
-	margin:0px auto;
-  border-radius: 44px;
-  box-shadow: inset 0px 0px 20px -6px rgba(97,89,97,1);
+.dishcoverer-footer {
+    padding: 80px;
 }
-
-.dish_blocks {
+.menu-blocks {
+    display: block;
+    padding: 20px;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-description {
+    text-align: center;
+}
+.game-menu {
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+.game-title {
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 70%;
+}
+.chef {
+    width: 20%;
+    padding: 5px;
+    height: 80%;
+}
+.game-board {
   display: block;
-  padding: 15px;
-  height: 100%;
-  justify-content: flex-start;
-  align-items: center;
 }
-
+.logos {
+    width: 70%;
+    padding-bottom: 20px;
+    margin-left: 50px;
+}
+.button-prices,
+.button-restaurants,
+.button-dishes {
+    background-color: #DE5B3F;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 25px 55px;
+    border-radius: 40px;
+    margin-left: 90px;
+}
+.button-prices:hover,
+.button-restaurants:hover,
+.button-dishes:hover {
+  background-color: #EB954A;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function:linear;
+  transition-delay: 1s;
+}
+.dishes_board {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 30px;
+    background: #dddddd;
+    margin: 0px auto;
+    border-radius: 44px;
+    box-shadow: inset 0px 0px 20px -6px rgba(97, 89, 97, 1);
+}
+.dish_blocks {
+    display: block;
+    padding: 15px;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
 .dish_back {
-  background-color: #456783;
-	width:71px;
-	height:71px;
-	margin:10px;
-	padding:30px;
-	font-size:18px;
-
+    background-color: #456783;
+    width: 71px;
+    height: 71px;
+    margin: 10px;
+    padding: 30px;
+    font-size: 18px;
 }
-
 .name {
-  height: 90px;
-	padding:10px;
-	font-size:16px;
-
+    height: 90px;
+    padding: 10px;
+    font-size: 16px;
 }
-
 .dish .front .blocked,
 .dish .back .blocked {
-  pointer-events: none;
+    pointer-events: none;
 }
-
-
-#prices-dish {
-  border-style: double;
-  border-width: 5px;
-  text-align: center;
-  margin: 10px;
-}
-
-#score {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  background-color: "grey";;
-  border-radius: 8px;
-  font-size: 1em;
-  font-family: Arial;
-  width:200px;
-  padding: 20px;
-  padding-top: 0;
-  margin: auto;
-}
-
 .container {
-  position: relative;
-}
-
-h1 {
-  color: "grey";
-  font-weight: bolder;
-  font-size: 4em;
-  text-align: center;
-}
-
-h2 {
-  color: "grey";
-  font-weight: bolder;
-  font-size: 2em;
-  text-align: center;
-}
-
-p {
-  font-weight: bolder;
-  font-size: 1em;
-  text-align: center;
-  padding: 20px 50px;
-  margin: 5px;
-  border-style: double;
-  border-width: 5px;
+    position: relative;
 }
 
 @media (max-width: 768px) {
-  .menu-blocks {
-    width:100%;
-  }
-  }
+    .menu-blocks {
+        width: 100%;
+    }
+}
 @media (min-width: 767px) and (max-width: 960px) {
-  .menu-blocks {
-    width:28%;
-  }
+    .menu-blocks {
+        width: 28%;
+    }
 }
 @media (min-width: 961px) and (max-width: 1024px) {
-  .menu-blocks {
-    width:28%;
-  }
+    .menu-blocks {
+        width: 28%;
+    }
 }
 @media (min-width: 1024px) {
-  .menu-blocks {
-    width:28%;
-  }
-  .menu-text {
-    width:60%;
-  }
-}
-
-.hidden {
-  visibility: hidden;
+    .menu-blocks {
+        width: 28%;
+    }
+    .menu-text {
+        width: 60%;
+    }
 }
