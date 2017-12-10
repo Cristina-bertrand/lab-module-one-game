@@ -223,13 +223,15 @@ input {
   margin: 0px auto;
   border-radius: 44px;
 }
-
+.dish{
+  margin: 20px;
+}
 .back,
 .front {
   background-size: cover !important;
   background-color: #456783;
-  width: 171px;
-  height: 171px;
+  width: 271px;
+  height: 271px;
 }
 
 .name {
