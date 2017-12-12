@@ -137,8 +137,7 @@ input {
     display: block;
     width: 120%;
 }
-.button-search,
-.button-next-level {
+.button-search {
   background-color: #DE5B3F;
   color: white;
   font-weight: bold;
@@ -149,6 +148,18 @@ input {
   margin-left: 100px;
   width: 110px;
 }
+.button-next-level {
+  background-color: #DE5B3F;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 15px 15px;
+  border-radius: 40px;
+  margin-top: 80px;
+  margin-left: 100px;
+  width: 250px;
+}
+
 .dishcoverer-footer {
     padding: 80px;
 }
@@ -165,18 +176,14 @@ input {
 .game-menu {
     flex-flow: column nowrap;
     justify-content: center;
-    width: 100%;
-    height: 300px;
+    width: 1198px;
+    height: 330px;
 }
 .game-title {
   flex-flow: column nowrap;
   justify-content: center;
-  width: 70%;
-}
-.chef {
-    width: 20%;
-    padding: 5px;
-    height: 80%;
+  width: 850px;
+  height: 330px;
 }
 .game-board {
   display: block;
@@ -213,7 +220,8 @@ input {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 30px;
-    background: #dddddd;
+    background: white;
+    border: 1px solid;
     margin: 0px auto;
     border-radius: 44px;
     box-shadow: inset 0px 0px 20px -6px rgba(97, 89, 97, 1);
@@ -231,7 +239,7 @@ input {
 .back,
 .front {
   background-size: cover !important;
-  background-color: #456783;
+  background-image: url("../images/dishes/Plato-blanco.png");
   width: 271px;
   height: 271px;
   display: block;
@@ -250,59 +258,32 @@ input {
 .container {
     position: relative;
 }
-
-/* Outer */
-.popup {
-    width:100%;
-    height:100%;
-    display:none;
-    position:fixed;
-    top:0px;
-    left:0px;
-    background:rgba(0,0,0,0.75);
+#platos {
+    display: flex;
+    width: 100%;
+    height: 418px;
+    background-image: url("../images/dishes/Platos.png");
+    background-size: cover;
+    background-position: center;
 }
-
-/* Inner */
-.popup-inner {
-    max-width:700px;
-    width:90%;
-    padding:40px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
-    box-shadow:0px 2px 6px rgba(0,0,0,1);
-    border-radius:3px;
-    background:#fff;
+.chef {
+  background-image: cover;
+  width: 310px;
+  height: 310px;
 }
-
-/* Close Button */
-.popup-close {
-    width:30px;
-    height:30px;
-    padding-top:4px;
-    display:inline-block;
-    position:absolute;
-    top:0px;
-    right:0px;
-    transition:ease 0.25s all;
-    -webkit-transform:translate(50%, -50%);
-    transform:translate(50%, -50%);
-    border-radius:1000px;
-    background:rgba(0,0,0,0.8);
-    font-family:Arial, Sans-Serif;
-    font-size:20px;
-    text-align:center;
-    line-height:100%;
-    color:#fff;
+.platos-iguales-title {
+    text-align: left;
+    font-size: 3em;
+    font-weight: normal;
 }
-
-.popup-close:hover {
-    -webkit-transform:translate(50%, -50%) rotate(180deg);
-    transform:translate(50%, -50%) rotate(180deg);
-    background:rgba(0,0,0,1);
-    text-decoration:none;
+.platos-iguales {
+  color: #DE5B3F;
+  font-weight: bold;
+}
+.score-points {
+  text-align: left;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 @media (max-width: 768px) {
