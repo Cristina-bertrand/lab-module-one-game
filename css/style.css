@@ -1,13 +1,13 @@
-
-
 html {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
 }
+
 footer {
-    width: 100%;
-    height: 400px;
-    background-color: #171B27;
+  width: 100%;
+  height: 400px;
+  background-color: #171B27;
+  clear: both;
 }
 
 a, button {
@@ -15,128 +15,184 @@ a, button {
 }
 
 h1 {
-    color: "grey";
-    font-weight: bolder;
-    font-size: 4em;
-    text-align: center;
+  color: "grey";
+  font-weight: bolder;
+  font-size: 4em;
+  text-align: center;
 }
+
 h2 {
-    color: "grey";
-    font-weight: bolder;
-    font-size: 2em;
-    text-align: center;
+  color: "grey";
+  font-weight: bolder;
+  font-size: 2em;
+  text-align: center;
 }
+
 p {
-    color: #696969;
+  color: #696969;
 }
-#dishcoverer {
-  display: flex;
-  justify-content: flex-start;
+
+#dishcoverer .search-place {
+  width: 60%;
+}
+
+#dishcoverer .button-search {
+  margin: 0;
+  display: inline;
+}
+
+.column.custom-1 {
+  width: 15%;
+  top: 40px;
+  position: relative;
+}
+
+.column.custom-2 {
+  margin-top: 0;
+}
+
+.column.custom-3 {
+  position: absolute;
+  width: 30%;
+  right: -30px;
+}
+
+.custom-1 img {
+  width: 40%;
+}
+
+#home {
+  clear: both;
 }
 
 #comidillas {
-    display: flex;
-    width: 100%;
-    height: 418px;
-    background-image: url("../images/home/food-background-PQZU33B.jpg");
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  padding-bottom: 40%;
+  background-image: url("../images/home/food-background-PQZU33B.jpg");
+  background-size: cover;
+  background-position: center;
 }
+
 #experto-block {
-    display: flex;
-    flex-flow: row nowrap;
+  position: relative;
 }
+
 #experto-image {
-    height: 427px;
-    width: 100%;
-    background-image: url("../images/home/hungry-young-man-smiling-with-chopsticks-PU923AS.jpg");
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 25%;
+  background-image: url("../images/home/hungry-man.jpg");
+  background-size: cover;
+  background-position: center;
 }
+
+.hungry-man_img {
+  width: 100%;
+}
+
 #experto-presentation {
-    background-color: #E3EAF0;
-    padding: 30px;
-    padding-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
 }
+
 #menu {
-    display: flex;
-    justify-content: flex-end;
+  clear: both;
 }
+
+#menu .column {
+  padding: 40px 0;
+}
+
 #prices-dish {
-    border-style: double;
-    border-width: 5px;
-    text-align: center;
-    margin: 10px;
+  border-style: double;
+  border-width: 5px;
+  text-align: center;
+  margin: 10px;
 }
+
 #score {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-radius: 8px;
-    font-family: Arial;
-    width: 200px;
-    padding: 20px;
-    padding-top: 0;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 8px;
+  font-family: Arial;
+  width: 200px;
+  padding: 20px;
+  padding-top: 0;
+  margin: auto;
 }
+
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
+
 .comidillas-title {
-    color: white;
-    width: 1192px;
-    text-align: left;
-    padding-top: 10px;
-    padding-left: 130px;
-    letter-spacing: 3px;
+  color: white;
+  width: 1192px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 130px;
+  letter-spacing: 3px;
 }
+
 .welcome-comidillas {
-    font-weight: 200;
+  font-weight: 200;
 }
+
 .comidillas-bold {
-    font-weight: bold;
-    font-size: 2em;
+  font-weight: bold;
+  font-size: 2em;
 }
+
 .experto-title {
-    text-align: left;
-    font-size: 3em;
-    font-weight: normal;
+  text-align: left;
+  font-size: 3em;
+  font-weight: normal;
 }
+
 .experto-word {
-    color: #DE5B3F;
-    font-weight: bold;
+  color: #DE5B3F;
+  font-weight: bold;
 }
+
 .logo-dishcoverer {
-    width: 200px;
+  width: 200px;
 }
+
 .logo-image {
-  width:70%;
-  padding: 30px;
 }
+
 .log-in {
-    width: 100px;
+  width: 100px;
 }
+
 .log-in-image {
-  width:160%;
-  padding: 80px;
+  width: 50%;
 }
+
 .search-place {
   width: 400px;
   padding: 50px;
   margin-top: 30px;
 }
-.search-place input{
-    height:30px;
+
+.search-place input {
+  height: 30px;
+  display: inline;
 }
+
 input {
-    border: 1px solid grey;
-    border-radius: 40px;
-    padding: 10px;
-    padding-left: 20px;
-    font-size: 1em;
-    display: block;
-    width: 120%;
+  border: 1px solid grey;
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 1em;
+  display: block;
+  width: 70%;
 }
+
 .button-search {
   background-color: #DE5B3F;
   color: white;
@@ -148,6 +204,7 @@ input {
   margin-left: 100px;
   width: 110px;
 }
+
 .button-next-level {
   background-color: #DE5B3F;
   color: white;
@@ -160,82 +217,91 @@ input {
   width: 250px;
 }
 
-.dishcoverer-footer {
-    padding: 80px;
+.quiz {
+  text-transform: uppercase;
+  text-align: center;
 }
+
+#footer {
+  color: white;
+  font-weight: 300;
+}
+
+#footer ul {
+  list-style: none;
+}
+
 .menu-blocks {
-    display: block;
-    padding: 20px;
-    height: 300px;
-    justify-content: space-around;
-    align-items: center;
 }
+
 .menu-description {
-    text-align: center;
+  text-align: center;
 }
+
 .game-menu {
-    flex-flow: column nowrap;
-    justify-content: center;
-    width: 1198px;
-    height: 330px;
+  position: relative;
 }
-.game-title {
-  flex-flow: column nowrap;
-  justify-content: center;
-  width: 850px;
-  height: 330px;
-}
+
 .game-board {
   display: block;
+  clear: both;
+  padding-bottom: 40px;
 }
+
 .logos {
-    width: 70%;
-    padding-bottom: 20px;
-    margin-left: 50px;
+  width: 100%;
 }
+
 .button-prices,
 .button-restaurants,
 .button-dishes {
-    background-color: #DE5B3F;
-    color: white;
-    font-weight: bold;
-    font-size: 1em;
-    padding: 25px 55px;
-    border-radius: 40px;
-    margin-left: 90px;
+  background-color: #DE5B3F;
+  color: white;
+  border: none;
+  font-size: 1em;
+  padding: 15px 40px;
+  border-radius: 40px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
 }
+
 .button-prices:hover,
 .button-restaurants:hover,
 .button-dishes:hover {
   background-color: #EB954A;
   transition-property: width;
   transition-duration: 2s;
-  transition-timing-function:linear;
+  transition-timing-function: linear;
   transition-delay: 1s;
 }
+
 .dishes_board,
 .prices-dishes-board,
 .dishes-restaurant-board {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 30px;
-    background: white;
-    border: 1px solid;
-    margin: 0px auto;
-    border-radius: 44px;
-    box-shadow: inset 0px 0px 20px -6px rgba(97, 89, 97, 1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 30px;
+  background: white;
+  border: 1px solid;
+  margin: 0px auto;
+  border-radius: 44px;
+  box-shadow: inset 0px 0px 20px -6px rgba(97, 89, 97, 1);
 }
-.prices_board{
+
+.prices_board {
   padding: 30px;
   height: 50px;
   background: #E3EAF0;
   margin: 0px auto;
   border-radius: 44px;
 }
-.dish{
+
+.dish {
   margin: 20px;
 }
+
 .back,
 .front {
   background-size: cover !important;
@@ -246,66 +312,120 @@ input {
 }
 
 .name {
-    height: 90px;
-    padding: 10px;
-    font-size: 16px;
+  height: 90px;
+  padding: 10px;
+  font-size: 16px;
 }
+
 .dish .front .blocked,
 .dish .back .blocked {
-    pointer-events: none;
-    display: block !important;
+  pointer-events: none;
+  display: block !important;
 }
+
 .container {
-    position: relative;
+  position: relative;
 }
+
 #platos {
-    display: flex;
-    width: 100%;
-    height: 418px;
-    background-image: url("../images/dishes/Platos.png");
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  width: 100%;
+  height: 418px;
+  background-image: url("../images/dishes/Platos.png");
+  background-size: cover;
+  background-position: center;
 }
+
 .chef {
-  background-image: cover;
   width: 310px;
   height: 310px;
 }
+
 .platos-iguales-title {
-    text-align: left;
-    font-size: 3em;
-    font-weight: normal;
+  text-align: left;
+  font-size: 3em;
+  font-weight: normal;
 }
+
 .platos-iguales {
   color: #DE5B3F;
   font-weight: bold;
 }
+
 .score-points {
   text-align: left;
   font-size: 1em;
   font-weight: normal;
 }
 
-@media (max-width: 768px) {
-    .menu-blocks {
-        width: 100%;
-    }
+#restaurant-info {
+  text-align: center;
 }
-@media (min-width: 767px) and (max-width: 960px) {
-    .menu-blocks {
-        width: 28%;
-    }
+
+.row {
+  box-sizing: border-box;
+  max-width: 1024px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 8px;
 }
-@media (min-width: 961px) and (max-width: 1024px) {
-    .menu-blocks {
-        width: 28%;
-    }
+
+.row:before, .row:after {
+  content: "";
+  display: table;
 }
-@media (min-width: 1024px) {
-    .menu-blocks {
-        width: 28%;
-    }
-    .menu-text {
-        width: 60%;
-    }
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */;
+}
+
+.column, .columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 48em) {
+  .column, .columns {
+    margin-left: 4%;
+  }
+
+  .column:first-child, .columns:first-child {
+    margin-left: 0;
+  }
+
+  .one-third.column {
+    width: 30.6666666667%;
+  }
+
+  .two-thirds.column {
+    width: 65.3333333333%;
+  }
+
+  .one-half.column {
+    width: 48%;
+  }
+
+  .mt {
+    margin-top: 50px;
+  }
+
+  .game-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #experto-presentation {
+    position: relative;
+    width: 100%;
+  }
 }

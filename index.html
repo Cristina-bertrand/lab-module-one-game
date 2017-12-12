@@ -1,141 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Dish Game</title>
-</head>
-
-<body>
-    <div id="dishcoverer">
-        <div class="logo-dishcoverer">
-        <img  src="./images/home/Logo.png" alt="" class="logo-image">
-        </div>
-        <div class="search-place">
-           <input placeholder="búsqueda rápida de platos" type="text" name="search">
-        </div>
-        <div>
-        <button class="button-search">Buscar</button>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <title>Dish Game</title>
+   </head>
+   <body>
+      <div id="dishcoverer" class="row">
+         <div class="logo-dishcoverer column custom-1">
+            <img  src="./images/home/Logo.png" alt="" class="logo-image">
+         </div>
+         <div class="search-place column custom-2">
+            <input placeholder="búsqueda rápida de platos" type="text" name="search">
+            <button class="button-search">Buscar</button>
+         </div>
+         <div class="log-in column custom-3">
+            <img  src="./images/home/Sign-up.png" alt="" class="log-in-image">
+         </div>
       </div>
-      <div class="log-in">
-        <img  src="./images/home/Sign-up.png" alt="" class="log-in-image">
-      </div>
-    </div>
-    <section id="home">
-        <div id="comidillas">
-            <h1 class="comidillas-title"><span class="welcome-comidillas">BIENVENIDOS</span><br><span class="comidillas-bold">COMIDILLAS</span></h1>
-        </div>
-        <section id="experto-block">
-            <div id="experto-image"></div>
+      <section id="home">
+         <div id="comidillas"></div>
+         <section id="experto-block">
+            <img src="images/home/hungry-man.jpg" alt="hungry-man" class="hungry-man_img"/>
             <div id="experto-presentation">
-                <h1 class="experto-title">¿Eres un comidillas <span class="experto-word">experto?</span></h1>
-                <p>El que más sabe sobre restaurantes de moda. El que siempre sabe que pedir. El que se acuerda de su amigo vegano y del intolerante a lactosa. El que tiene una lista de menús más top.</p>
-                <br>
-                <p>Demuestra lo que sabes haciendo nuestros quizs y consigue usuario premium en Dishcoverer</p>
+               <h1 class="experto-title">¿Eres un comidillas <span class="experto-word">experto?</span></h1>
+               <p>El que más sabe sobre restaurantes de moda. El que siempre sabe que pedir. El que se acuerda de su amigo vegano y del intolerante a lactosa. El que tiene una lista de menús más top.</p>
+               <p>Demuestra lo que sabes haciendo nuestros quizs y consigue usuario premium en Dishcoverer</p>
             </div>
-        </section>
-        <div id="menu">
-            <div class="menu-blocks">
-                <img src="./images/home/Platos.png" alt="" class="logos">
-                <p class="menu-description">Memoriza y selecciona la pareja de platos iguales</p>
-                <button class="button-dishes">Platos</button>
+         </section>
+         <div id="menu" class="row">
+            <div class="column one-third">
+               <img src="./images/home/Platos.png" alt="" class="logos">
+               <h4 class="quiz">Platos QUIZ</h4>
+               <p class="menu-description">Memoriza y selecciona la pareja de platos iguales</p>
+               <button class="button-dishes">Platos</button>
             </div>
-            <div class="menu-blocks">
-                <img src="./images/home/Precios.png" alt="" class="logos">
-                <p class="menu-description">Une cada plato con su precio</p>
-                <button class="button-prices">Precios</button>
+            <div class="column one-third">
+               <img src="./images/home/Precios.png" alt="" class="logos">
+               <h4 class="quiz">Precios QUIZ</h4>
+               <p class="menu-description">Une cada plato con su precio</p>
+               <button class="button-prices">Precios</button>
             </div>
-            <div class="menu-blocks">
-                <img src="./images/home/Restaurantes.png" alt="" class="logos">
-                <p class="menu-description">Encuentra que plato no corresponde a ese restaurante</p>
-                <button class="button-restaurants">Restaurantes</button>
+            <div class="column one-third">
+               <img src="./images/home/Restaurantes.png" alt="" class="logos">
+               <h4 class="quiz">Restaurantes QUIZ</h4>
+               <p class="menu-description">Encuentra que plato no corresponde a ese restaurante</p>
+               <button class="button-restaurants">Restaurantes</button>
             </div>
-        </div>
-    </section>
-    <div id="dishes-game">
-        <section id="platos">
-        </section>
-        <section class="game-menu">
+         </div>
+      </section>
+      <div id="dishes-game">
+         <section id="platos">
+         </section>
+         <section class="game-menu row">
             <div class="chef"></div>
             <div class="game-title">
-                <div class="menu-text">
-                    <h2 class="platos-iguales-title">Memoriza y selecciona <span class="platos-iguales">la pareja de platos iguales</span></h2>
-                </div>
-                <div id="score">
-                    <h3 class="score-points">Intentos: <span id="pairs_clicked">0</span></h3>
-                    <h3 class="score-points">Aciertos: <span id="pairs_guessed">0</span></h3>
-                </div>
+               <div class="menu-text">
+                  <h2 class="platos-iguales-title">Memoriza y selecciona <span class="platos-iguales">la pareja de platos iguales</span></h2>
+               </div>
+               <div id="score">
+                  <h3 class="score-points"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                     Intentos: <span id="pairs_clicked">0</span>
+                  </h3>
+                  <h3 class="score-points"><i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                     Aciertos: <span id="pairs_guessed">0</span>
+                  </h3>
+               </div>
             </div>
-        </section>
-        <section class="game-board">
+         </section>
+         <section class="game-board row">
             <div class="dishes_board"></div>
-        </section>
-    </div>
-    <div id="prices-game">
-      <section class="game-menu">
-          <div class="chef"></div>
-          <div class="game-title">
-              <div class="menu-text">
+         </section>
+      </div>
+      <div id="prices-game">
+         <section class="game-menu row">
+            <div class="chef"></div>
+            <div class="game-title">
+               <div class="menu-text">
                   <h2 class="platos-iguales-title">Une cada plato con su precio correspondiente</h2>
-              </div>
-          <div id="score">
-              <h3 class="score-points">Intentos: <span id="pairs_clicked">0</span></h3>
-              <h3 class="score-points">Aciertos: <span id="pairs_guessed">0</span></h3>
-          </div>
-          </div>
-      </section>
-      <section class="game-board">
-          <div class="prices-board"></div>
-          <div class="prices-dishes-board"></div>
-      </section>
-    </div>
-    <div id="restaurant-game">
-      <section class="game-menu">
-          <div class="chef"></div>
-          <div class="game-title">
-              <div class="menu-text">
+               </div>
+               <div id="score">
+                  <h3 class="score-points"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                     Intentos: <span id="pairs_clicked">0</span>
+                  </h3>
+                  <h3 class="score-points"><i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                     Aciertos: <span id="pairs_guessed">0</span>
+                  </h3>
+               </div>
+            </div>
+         </section>
+         <section class="game-board row">
+            <div class="prices-board"></div>
+            <div class="prices-dishes-board"></div>
+         </section>
+      </div>
+      <div id="restaurant-game">
+         <section class="game-menu">
+            <div class="chef"></div>
+            <div class="game-title">
+               <div class="menu-text">
                   <h2 class="platos-iguales-title">Averigua que plato corresponde al restaurante</h2>
-              </div>
-          <div id="score">
-              <h3 class="score-points">Intentos: <span id="pairs_clicked">0</span></h3>
-              <h3 class="score-points">Aciertos: <span id="pairs_guessed">0</span></h3>
-          </div>
-          </div>
-      </section>
-        <section id="restaurant-info">
-            <h1>Cañadio</h1>
+               </div>
+               <div id="score">
+                  <h3 class="score-points"><i class="fa fa-times-circle" aria-hidden="true"></i>
+                     Intentos: <span id="pairs_clicked">0</span>
+                  </h3>
+                  <h3 class="score-points"><i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                     Aciertos: <span id="pairs_guessed">0</span>
+                  </h3>
+               </div>
+            </div>
+         </section>
+         <section id="restaurant-info">
+            <h2>Cañadio</h2>
             <p>Restaurante desde 1981</p>
-        </section>
-        <section class="game-board">
+         </section>
+         <section class="game-board row">
             <div class="dishes-restaurant-board"></div>
-        </section>
-    </div>
-    <footer id="footer">
-        <img class="dishcoverer-footer" src="./images/home/footer.png">
-        <div>
-        <ul>
-          <li>Quienes somos</li>
-          <li>Para empresas</li>
-          <li>Para usuarios</li>
-        </ul>
-        <ul>
-          <li>Privacidad</li>
-          <li>Condiciones de uso</li>
-          <li>Preguntas frecuentes</li>
-        </ul>
-        </div>
-
-</div>
-    </footer>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="./lib/dataset.js"></script>
-    <script type="text/javascript" src="./lib/dish.js"></script>
-    <script type="text/javascript" src="./lib/game-dishes.js"></script>
-    <script type="text/javascript" src="./lib/game-prices.js"></script>
-    <script type="text/javascript" src="./lib/game-restaurants.js"></script>
-</body>
-
+         </section>
+      </div>
+      <footer id="footer">
+         <div class="column one-third">
+            <img class="dishcoverer-footer" src="./images/home/footer.png">
+         </div>
+         <div class="column one-third mt">
+            <ul class="list-1">
+               <li>Quienes somos</li>
+               <li>Para empresas</li>
+               <li>Para usuarios</li>
+            </ul>
+         </div>
+         <div class="column one-third mt">
+            <ul class="list-2">
+               <li>Privacidad</li>
+               <li>Condiciones de uso</li>
+               <li>Preguntas frecuentes</li>
+            </ul>
+         </div>
+         </div>
+      </footer>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script type="text/javascript" src="./lib/dataset.js"></script>
+      <script type="text/javascript" src="./lib/dish.js"></script>
+      <script type="text/javascript" src="./lib/game-dishes.js"></script>
+      <script type="text/javascript" src="./lib/game-prices.js"></script>
+      <script type="text/javascript" src="./lib/game-restaurants.js"></script>
+   </body>
 </html>
